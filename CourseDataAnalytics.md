@@ -176,3 +176,45 @@ project and are interested in the outcome
 ## Query
 The way we use SQL to communicate with the database
 
+""" Data visualizations are pictures. They are wonderful way to take very basic
+ideas around data and data points and make them come alive. """
+
+""" In analytics, I feel like the key to success is being able to blend the personal side with the technical side. """
+
+## Issue
+A topic or subject to investigate
+
+## Question
+Designed to discover information
+
+## Problem
+An obstacle or complication that needs to be worked out
+
+## Business task
+The question or problem data analysis answers for a business
+
+""" I think one of the most important things to remember about data analytics is that
+data is data. """
+
+## Fairness
+Ensuring that you analysis doesn't create or reinforce bias
+
+- Financial service
+- Telecom
+- Tech
+
+"""" Think about time where you've used data to solve a problem, whether it's in your professional or personal projects. """
+
+""" Increase yuor professional network."""
+
+""" It's really important to have your LinkedIn updated along wiht websites, like GitHub
+where you can showcase a lot of the data analyst projects you've done. """
+
+""" Prepare questions for the interviewer. """
+
+""" Sometimes there is no right answer, and a lot of times interviewers are looking to see
+thought process and the way you get to your solution. """
+
+""" Look for the recruiter. Look for the hiring manange online. See if you can reach out
+to them and set up a coffee chat or send them your resume directly. """
+
