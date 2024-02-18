@@ -160,3 +160,53 @@ The process of recognizing the current problem or situation, organizing availabl
 ## Scope of work (SOW)
 An agreed-upon outline of the work you're going to perform on a project
 
+## Stakeholders 
+People that have invested time, intersert, and resources into the projects you'll be working on as a data analyst
+
+## Turnover rate
+The rate at which employees leave a company
+
+1. Who are the primary and secondary stakeholders?
+2. Who is mananging the data?
+3. Where can you go for help?
+
+## Before you communicate, think about
+1. Who your audience is
+2. What they already know
+3. What they need to know
+4. How you can communicate that effectively to them
+
+""" Sometimes poeople think that data can answer everything and sometimes we
+have to acknowledge that that is simply untrue """
+
+## Do
+    - Come prepared
+    - Be on time
+    - Pay attention
+    - Ask questions
+
+## Do
+    - Bring what you need
+    - Read the meeting agenda
+    - Prepare notes and presentations
+    - Be ready to answer questions
+
+ ## Don't 
+    - Show up unprepared
+    - Arrive late
+    - Be distracted
+    - Dominate the conversation
+    - Talk over others
+    - Distract people with unfocused discussion
+
+
+""" I found that my best projects start off when the communication is really clear about what's expected. """
+
+## A conflict can pop up for a variety of reasons
+
+""" It actually took me a couple of years, when I really sparked
+an interest in data analaysis to land a role where I got to do it full time
+and really get my hands dirty with the data """
+
+""" (One of) the things that were instilled in me in the Marines that I use to
+this very day would be attention to detail. """
