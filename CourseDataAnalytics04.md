@@ -203,3 +203,133 @@ The process of matching fields from one data source to another
 - UPDATE SET
 - WHERE
 - CREATE TABLE IF NOT EXISTS
+- DROP TABLE IF EXISTS
+
+
+## CLEAN SQL
+
+## Including DISTINCT in your SELECT statement removes duplicates
+
+## TEXT STRINGS
+A group of characters within a cell, commonly composed
+of letters, numbers, or both
+
+## Function SQL
+
+## LENGTH = LEN
+
+## SUBSTRING
+
+## TRIM
+
+## CAST
+Can be used to convert anything from one data type to another
+
+## CAST(FIELDNAME AS DATATYPE)
+
+## CANCAT
+Adds strings together to create new text strings that can be used as unique keys
+
+## COALESCE
+Can be used to return non-null values in a list   
+## COALESCE(ARG1,ARG2)
+
+## BETWEEN [FROM] AND [TO]
+
+## Verificacion
+A process to confirm that a data-cleaning effort was well-executed and the resulting data is accurate and reliable
+
+## Changelog
+A file containing a chronologically ordered list of modifications made to a project
+
+
+## See the big picture when verifying data-cleaning
+    - Consider the business problem
+    - Consider the goal
+    - Consider the data
+
+## Do the numbers make senece?
+
+## TRIM
+A function that removes leading, trailing, and repeated spaces in data
+
+## Remove duplciates
+A tool that automatically searches for and eliminates duplicate entries from
+a spreadsheet
+
+## Pivot table
+A data summarization tool that is used in data processing
+
+## Find and replace
+A tool that looks for a specified search term in a spreadsheet and allows you to replace it with something else
+
+## CASE Statement
+The CASE statement goes through one or more conditions and returns a value as soon as a condition is met
+
+## Documentation
+The process of tracking changes, additons, deletions, and involved in your data-cleaning effort
+
+## Recover data-cleaning errors
+## Inform other users of changes
+## Determine quality of data
+
+## Common data errors
+    - Human error in data entry
+    - Flawed processes
+    - System issues
+
+## Application process look like
+
+## Write or adjust your resume
+
+## Different types of data analyst jobs
+
+## Job Sites
+
+## Make sure it's a competitive offer before you sign
+
+## There's usually some room to negotiate your salary, vacation days or something else
+
+## But also udertand that the company hiring you also has already placed a certain value on your role
+
+## Give yourself at least two weeks before you offically start
+
+## It's customary and polite to give at least a two-week notice at your old job
+before starting a new one
+
+## Entry-level data analytics professional;
+## recently completed the Google Data Analytics Professional Certificate
+
+## Experiences
+
+    - Spreadsheets
+    - SQL
+    - Tableau
+    - R
+
+## Prgramming language:
+    - SQL
+    - Python
+    - R
+
+## Joseph
+
+## Transferable skills
+Skills and qualities that can transfer from one job or industry to another
+
+## Soft skills
+Non-Technical and behaviors that relate to how you work
+
+## Detail-oriented
+## Perseverance
+
+## Junior or associate data analysts
+    - Healthcare Analyst
+    - Marketing Analyst
+    - Business Intelligence analyst
+    - Financial Analyst
+
+
+
+
+
