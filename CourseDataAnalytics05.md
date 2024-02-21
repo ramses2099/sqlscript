@@ -34,3 +34,190 @@ When you sort data in a spreadsheet using multiple conditions
 
 ## Order by for order in sql
 
+## Incorrectly formatedd data can:
+    - Lead to mistakes
+    - Take time to fix
+    - Affect stakeholder's decision-making
+
+## = CONVERT(RANGE, "F","C")
+
+## Allows you to control what can and can't be entered in your worksheet
+
+## Data validattion
+    - Add dropdown list with predetermined options
+    - Custom checkboxex
+    - Protect structured data and formulas
+
+## Conditional formatting
+A spreadsheet tool that changes how celss apprear when values meet specific conditions
+
+## =CONCATENATE
+A fuction that joins together two or more text strings
+
+## Openness (or open data)
+Free access, usage and sahring of data
+
+## CONCAT(field1,"-", field2)
+    - juan-perez
+
+## =LEN(text)
+    - Returns the length of a string
+
+## =LEFT(string,[number_of_character])
+    - Returns a substring from the begining of a specified string
+
+## =RIGHT(string, [number_of_character])
+    - Returns a substring from the end of a specified string
+
+## =FIND(search_for,text_to_search,[starting_at])
+    - Returns the position at which a string is first found within text
+
+## Add 1 minus the start time to the formula that's being used for the multi-day trip; then try to apply to another tripe happpened in the same day
+
+" the analyze stage is where you become the expert about your dataset "
+
+## Best practices for searching online
+    - Thinking skills
+    - Data analytics terms
+    - Basic knowledge of tools
+## Mental model
+    - Your thought process and the way you approach a problem
+
+## R
+    - A programming language frequently used for statistical analysis, visualization and other data analysis, visualization, and other data analysis
+
+## Aggregation
+    - Collecting or gathering many separate pieces into a whole
+
+## Data aggregation
+    - The process of gathering data from multiple sources in order to combine it into a single summarized collection
+
+    - Puzzle pieces = data
+    - Organization = aggregation
+    - Pile of pieces = summary
+    - Putting the pieces together = gaining insights
+
+ ## Data can also be aggregated over a given time period to provide statistics such as:
+    - Averages
+    - Minumums
+    - Maximums
+    - Sums
+
+## Functions help make data aggregation possible
+
+## Subquery
+A query within another query
+
+## =VLOOKUP (Vertical Lookup)
+A fucntion that searches for a certain value in a column to return a corresponding piece of information
+
+## =VALUE
+A function that converts a text string that represents a number to a numerical value
+
+## =VALUE(field)
+    - VALUE("9") = 9
+
+## =TRIM(text)
+    - Removes leading and trailing spaces in a specified string.
+
+## Remove duplicates
+    - A tool that automatically search for and eliminates duplicate entries from a spreadsheet
+
+## Recognize the limitations of VLOOKUP and fix some of the most common problems
+
+## Troubleshooting questions
+    - How should I prioritize these issues?
+    - In a single sentences, what's the issue I'm facing?
+    - What resources can help me solve the problem?
+    - How can I stop this problem from happening in the future?
+
+## VLOOKUP only returns the first match it finds
+
+## VLOOKUP(search_key, range, index, [is_soreted])
+    - Vertical lookup. Searches down the first column of a range for a key
+    and returns the value of a specified cel in the row found.
+
+## Absolute reference
+    - A reference that is locked so that rows and columns won't change when copied
+
+## MATCH
+    - A function used to locate the position of a specific lookup value
+
+## TRUE tells VLOOKUP to look for approximate matches
+## FALSE tells VLOOKUP to look for exact matches
+
+## =VLOOKUP(A2,'Sheet 2'!A:B,2, TRUE)
+## =VLOOKUP(A2,'Sheet 2'!A:B,2, FALSE)
+
+## How to user JOIN in SQL to aggregate data in database
+
+## JOIN
+    - A SQL clause that is used to combine rows from two or more table based on a related column
+
+## Common JOIN's
+    - INNER
+    - LEFT
+    - RIGHT
+    - OUTER
+
+## Primary keys reference columns in which each value is unique
+## Foreign keys are primary keys in other tables
+
+## =COUNT in spreadsheets
+    - Can be used to count the total number of numerical values within a specific range in spreadsheets
+
+## COUNT in SQL
+    - A query that returns the number of rows in a specified range
+
+## COUNT DISTINCT
+    - A query that only returns the distinct values in a specified range
+
+""" You'll use COUNT and COUNT DISTINCT any time you want to answer questions about "How many" """
+
+## Aliasing
+    - When you temporarily name a table or columns in your query to make it easier to read and write
+
+## Subquery
+    - A SQL query that is nested inside a larger query
+
+
+## HAVING
+    - Allows you to add a filter to your query instead of the underlying table that can only be used with aggregate functions
+
+## CASE
+    - Returns records with your conditions by allowing you to include if/then statements in your query
+
+## Caluses like HAVING and CASE, paired with subqueries, will help you build more and more complex query
+
+- Formulas for basic calculations
+- Conditional formulas that use the IF function
+- The SUMPRODUCT function
+- Pivot tables to organize calculations
+- Queries and calculations in SQL
+- Temporary Tables in SQL
+
+""" We'll show you how you can use formulas in a spreadsheet to complete some of the more basic calculations """
+
+## =SUM(range)
+## =AVERAGE(range)
+## =MIN(range)
+## =MAX(range)
+
+## =COUNTIF(range,criterion)
+    -Returns a conditional count across a range
+    - =COUNTIF(B1:B2,"=1")
+## =SUMIF(range,criterion, [sum_range])
+    -Returns aconditonal sum across a range
+    - =SUMIF(B1:B2,"=1",C1:C2)
+
+## Summary table
+A table used to summarize statistacal information about data
+
+## SUMPRODUCT
+A function that multiplies arrays and returns the sum of those products
+## =sumproduct(array1,[array2])
+## Array
+    -A collection of values in cells
+
+    
+
