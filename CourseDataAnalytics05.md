@@ -219,5 +219,74 @@ A function that multiplies arrays and returns the sum of those products
 ## Array
     -A collection of values in cells
 
-    
+## Profit margin
+A percentage that indicates how many cents of profit has been generated for each
+dollar of sale
+
+## Pivot tables let you view in multiple ways to find insghts and trends
+
+## Analysis steps
+    - Find out how much revenue was generated each year
+    - Build a pivot table to show the revenue per year
+    - Find the average revenue per movie
+    - Check our findings for some possible trends
+
+## Calculated field
+A new field within a pivot table that carries out certain calculations
+based on the values of other fields
+
+## Operator
+A symbol that names the type of operation or calculation to be performed in a formula
+
+## in SQL
+    -> + addition
+    -> - subtraction
+    -> * multiplication
+    -> / division
+
+## Modulo
+An operator (%) that returns the remainder when one number is divied by another
+
+## SQL functions 
+    - SUM
+    - AVG
+
+## Underscores
+Lines used to underline words and connect text characters
+
+## GROUP BY
+- A command that groups rows that have the same values from a table into summary rows
+
+## ORDER BY
+
+## SUM
+## COUNT
+
+## EXTRACT
+- Lets us pull one part of a given date to use
+    - EXTRACT(YEAR FROM COLUMN)
+
+
+## TEMPORARY TABLE
+    - A database table that is created and exists temporarily on a database server
+
+## WITH
+    - The WITH clause is a type of temporary table that you can query multiple times
+
+## WITH cte_name (col1, col2, ...) AS (
+    -- CTE query
+    SELECT ...
+## )
+-- Main query using the CTE
+SELECT ...
+FROM cte_name;
+
+## How to create temporary talbes:
+    - WITH clauses
+    - SELECT INTO statements
+    - CREATE TABLE statements
+    - CREATE TEMP TABLE statements
+
+
+
 
