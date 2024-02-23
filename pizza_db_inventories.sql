@@ -1,0 +1,9 @@
+insert into inventories (item_id, quantity) values (7, 2);
+insert into inventories (item_id, quantity) values (3, 9);
+insert into inventories (item_id, quantity) values (8, 2);
+insert into inventories (item_id, quantity) values (8, 6);
+insert into inventories (item_id, quantity) values (6, 2);
+insert into inventories (item_id, quantity) values (5, 2);
+insert into inventories (item_id, quantity) values (5, 3);
+insert into inventories (item_id, quantity) values (5, 6);
+insert into inventories (item_id, quantity) values (3, 7);

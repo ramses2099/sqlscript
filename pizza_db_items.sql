@@ -1,8 +1,8 @@
-insert into items (sku,item_name,item_cat,item_size,item_price)values('99191','Cheese Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('99191','Cheese Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('95191','Veggie Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('9191','Pepperoni Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('99191','Meat Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('90191','Margherita Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('99331','BBQ Chicken Pizza','pizza','large',12.56);
-insert into items (sku,item_name,item_cat,item_size,item_price)values('20191','Hawaiian Pizza','pizza','large',12.56);
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(1,'Cheese Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(2,'Cheese Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(4,'Veggie Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(3,'Pepperoni Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(5,'Meat Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(6,'Margherita Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(7,'BBQ Chicken Pizza','pizza','large',(random()*(25-10)+10));
+insert into items (recipe_id,item_name,item_cat,item_size,item_price)values(5,'Hawaiian Pizza','pizza','large',(random()*(25-10)+10));
