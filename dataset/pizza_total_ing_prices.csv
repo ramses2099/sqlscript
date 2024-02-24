@@ -1,0 +1,19 @@
+"item_id","sku","item_name","item_cat","item_size","total_price_ing"
+1,PIZZ-CHEE-S,Cheese,Pizza,Small,4586.000000
+2,PIZZ-CHEE-M,Cheese,Pizza,Medium,1375.800000
+3,PIZZ-CHEE-L,Cheese,Pizza,Large,3210.200000
+4,PIZZ-PEPP-S,Pepperoni,Pizza,Small,11537.500000
+5,PIZZ-PEPP-M,Pepperoni,Pizza,Medium,3692.000000
+6,PIZZ-PEPP-L,Pepperoni,Pizza,Large,7845.500000
+7,PIZZ-HAWA-S,Hawaiian,Pizza,Small,18543.000000
+8,PIZZ-HAWA-M,Hawaiian,Pizza,Medium,6181.000000
+9,PIZZ-HAWA-L,Hawaiian,Pizza,Large,12362.000000
+10,PIZZ-DONA-S,Donair,Pizza,Small,13700.000000
+11,PIZZ-DONA-M,Donair,Pizza,Medium,4110.000000
+12,PIZZ-DONA-L,Donair,Pizza,Large,4589.200000
+13,PIZZ-BBQC-S,BBQ Chicken,Pizza,Small,10025.000000
+14,PIZZ-BBQC-M,BBQ Chicken,Pizza,Medium,25062.500000
+15,PIZZ-BBQC-L,BBQ Chicken,Pizza,Large,8020.000000
+16,PIZZ-CHBR-S,Chicken Bacon Ranch,Pizza,Small,15611.100000
+17,PIZZ-CHBR-M,Chicken Bacon Ranch,Pizza,Medium,11019.600000
+18,PIZZ-CHBR-L,Chicken Bacon Ranch,Pizza,Large,27549.000000

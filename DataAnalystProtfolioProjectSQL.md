@@ -85,20 +85,25 @@
         10. Orders by delivery/pick up
 
 ```
-select
+--ORDER DATASET
+select 
 o.order_id,
 i.item_price,
-o.quantity ,
+o.quantity,
 i.item_cat,
 i.item_name,
 o.created_at,
+c.cust_id,
+concat(c.first_name, ' ', c.last__name) as customer,
 a.delivery_address1,
 a.delivery_address2,
-a.delivery_city ,
-a.delivery_zipcode 
-from orders o  
-inner join items i on i.item_id = o.item_id  
-inner join address a on a.add_id  = o.add_id 
+a.delivery_city,
+a.delivery_zipcode,
+o.delivery 
+from orders o 
+inner join items i on i.item_id = o.item_id
+inner join address a on a.add_id = o.add_id
+inner join customers c on c.cust_id = o.cust_id  
 ```
 
 
@@ -113,83 +118,44 @@ inner join address a on a.add_id  = o.add_id
 
 
 ```
--- CTE
-with s1 as(
-	select 
-	o.item_id,
-	r.quantity as recipe_quantity,
-	i.recipe_id,
-	i.item_name,
-	r.ing_id,
-	i2.ing_name,
-	sum(o.quantity) as order_quantity,
-	i2.ing_weight,
-	i2.ing_price 
-	from orders o 
-	inner join items i on i.item_id  = o.item_id 
-	inner join recipes r on r.recipe_id = i.recipe_id 
-	inner join ingredients i2 on i2.ing_id  = r.ing_id 
-	group by 
-	o.item_id,
-	i.recipe_id,
-	r.quantity,
-	i.item_name,
-	r.ing_id,
-	i2.ing_name,
-	i2.ing_weight,
-	i2.ing_price)	
-select
-item_id,
-ing_id,
-ing_name,
-ing_price,
-order_quantity,
-recipe_quantity,
-(order_quantity * recipe_quantity) as oredered_weight,
-(order_quantity / ing_weight) as unit_cost,
-(order_quantity * recipe_quantity) * (order_quantity / ing_weight) as ingredient_cost
-from s1;
+-- TOTAL PRICES PIZZA
+select 
+i.item_id,
+i.sku,
+i.item_name,
+i.item_cat ,
+i.item_size ,
+sum(r.quantity  * i2.ing_price ) as total_price_ing
+from items i 
+inner join recipes r on r.item_id = i.item_id 
+inner join recipes_ingredients ri on ri.recipe_id = r.recipe_id 
+inner join ingredients i2 on i2.ing_id  = ri.ing_id 
+group by 
+i.item_id,
+i.sku,
+i.item_name,
+i.item_cat ,
+i.item_size 
+order by 1 asc
+
 ```
 
-## create view stock1
+## cost for staff
 ```
-create view stock1 as
--- CTE
-with s1 as(
-	select 
-	o.item_id,
-	r.quantity as recipe_quantity,
-	i.recipe_id,
-	i.item_name,
-	r.ing_id,
-	i2.ing_name,
-	sum(o.quantity) as order_quantity,
-	i2.ing_weight,
-	i2.ing_price 
-	from orders o 
-	inner join items i on i.item_id  = o.item_id 
-	inner join recipes r on r.recipe_id = i.recipe_id 
-	inner join ingredients i2 on i2.ing_id  = r.ing_id 
-	group by 
-	o.item_id,
-	i.recipe_id,
-	r.quantity,
-	i.item_name,
-	r.ing_id,
-	i2.ing_name,
-	i2.ing_weight,
-	i2.ing_price)	
-select
-item_id,
-ing_id,
-ing_name,
-ing_price,
-order_quantity,
-recipe_quantity,
-(order_quantity * recipe_quantity) as oredered_weight,
-(order_quantity / ing_weight) as unit_cost,
-(order_quantity * recipe_quantity) * (order_quantity / ing_weight) as ingredient_cost
-from s1;
+select 
+r."date",
+concat(s.first_name,' ',s.last_name) as staff_name,
+s."position",
+s.hourly_rate,
+s2.day_of_week ,
+s2.start_time ,
+s2.end_time ,
+(extract (hour from s2.end_time) - extract (hour from s2.start_time)) as total_hours,
+((extract (hour from s2.end_time) - extract (hour from s2.start_time))* s.hourly_rate) as pay_per_shitf
+from rota r  
+inner join staff s on s.staff_id = r.staff_id 
+inner join shift s2 on s2.shift_id = r.shift_id 
+order by 1 asc
 ```
 
 ## stock2
