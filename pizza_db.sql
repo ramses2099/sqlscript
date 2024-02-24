@@ -19,26 +19,23 @@ CREATE TABLE "address" (
   "created_at" timestamp default now()
 );
 
-CREATE TABLE "recipes" (
-  "recipe_id" serial PRIMARY KEY,
-  "ing_id" int not null,
-  "quantity" int,
-  "created_at" timestamp default now(),
-  constraint fk_ref_recipes_ingredients
-		foreign key(ing_id) references ingredients(ing_id)
-);
-
-
 CREATE TABLE "items" (
   "item_id" serial PRIMARY KEY,
-  "recipe_id" int,
+  "sku" varchar(250),
   "item_name" varchar(250),
   "item_cat" varchar(250),
   "item_size" varchar(250),
   "item_price" decimal(15,6),
+  "created_at" timestamp default now()
+);
+
+CREATE TABLE "recipes" (
+  "recipe_id" serial PRIMARY KEY,
+  "item_id" int,
+  "quantity" int,
   "created_at" timestamp default now(),
-  constraint fk_ref_items_recipes
-		foreign key(recipe_id) references recipes(recipe_id)
+  constraint fk_ref_recipes_items
+		foreign key(item_id) references items(item_id)
 );
 
 CREATE TABLE "ingredients" (
@@ -47,16 +44,27 @@ CREATE TABLE "ingredients" (
   "ing_weight" int,
   "ing_meas" varchar(20),
   "ing_price" decimal(15,6),
-  "created_at" timestamp default now()
+  "created_at" timestamp default now(),
+);
+
+CREATE TABLE "recipes_ingredients" (
+  "recipes_ingredients_id" serial PRIMARY KEY,
+  "recipe_id" int,
+  "ing_id" int,
+  "created_at" timestamp default now(),
+  constraint fk_ref_recipes_ingredients_recipes
+  foreign key(recipe_id) references recipes(recipe_id),
+  constraint fk_ref_recipes_ingredients_ingredients
+  foreign key(ing_id) references ingredients(ing_id)
 );
 
 CREATE TABLE "inventories" (
   "inv_id" serial PRIMARY KEY,
-  "item_id" int,
+  "ing_id" int,
   "quantity" int,
   "created_at" timestamp default now(),
-  constraint fk_ref_inventories_items
-		foreign key(item_id) references items(item_id)
+  constraint fk_ref_inventories_ingredients
+		foreign key(ing_id) references ingredients(ing_id)
 );
 
 CREATE TABLE "orders" (
